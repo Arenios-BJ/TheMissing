@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 7164aa48a7933304e8a1a38d068b5746
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Button 0
+    100002: Button 1
+    100004: Button 2
+    100006: Button 3
+    100008: Button 4
+    100010: Button 5
+    100012: Button 6
+    100014: Button 7
+    100016: Button 8
+    100018: Button 9
+    100020: Button A
+    100022: Button B
+    100024: Door
+    100026: Handle
+    100028: Lock
+    100030: //RootNode
+    100032: Shelf
+    400000: Button 0
+    400002: Button 1
+    400004: Button 2
+    400006: Button 3
+    400008: Button 4
+    400010: Button 5
+    400012: Button 6
+    400014: Button 7
+    400016: Button 8
+    400018: Button 9
+    400020: Button A
+    400022: Button B
+    400024: Door
+    400026: Handle
+    400028: Lock
+    400030: //RootNode
+    400032: Shelf
+    2100000: Steel
+    2100002: Altas
+    2300000: Button 0
+    2300002: Button 1
+    2300004: Button 2
+    2300006: Button 3
+    2300008: Button 4
+    2300010: Button 5
+    2300012: Button 6
+    2300014: Button 7
+    2300016: Button 8
+    2300018: Button 9
+    2300020: Button A
+    2300022: Button B
+    2300024: Door
+    2300026: Handle
+    2300028: Lock
+    2300030: //RootNode
+    2300032: Shelf
+    3300000: Button 0
+    3300002: Button 1
+    3300004: Button 2
+    3300006: Button 3
+    3300008: Button 4
+    3300010: Button 5
+    3300012: Button 6
+    3300014: Button 7
+    3300016: Button 8
+    3300018: Button 9
+    3300020: Button A
+    3300022: Button B
+    3300024: Door
+    3300026: Handle
+    3300028: Lock
+    3300030: //RootNode
+    3300032: Shelf
+    4300000: Safe
+    4300002: Shelf
+    4300004: Door
+    4300006: Lock
+    4300008: Button 1
+    4300010: Button 2
+    4300012: Button 3
+    4300014: Button 4
+    4300016: Button 5
+    4300018: Button 6
+    4300020: Button 7
+    4300022: Button 8
+    4300024: Button 9
+    4300026: Button A
+    4300028: Button B
+    4300030: Button 0
+    4300032: Handle
+    7400000: Scene
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

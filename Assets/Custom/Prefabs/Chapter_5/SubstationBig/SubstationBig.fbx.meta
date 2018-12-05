@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 4c7c183b55f13554d9dfa4163aefb494
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bdoy
+    100002: "Chladi\u010De"
+    100004: EleBox
+    100006: Podstavec
+    100008: //RootNode
+    100010: Trubky
+    100012: Trubkyvelke
+    400000: Bdoy
+    400002: "Chladi\u010De"
+    400004: EleBox
+    400006: Podstavec
+    400008: //RootNode
+    400010: Trubky
+    400012: Trubkyvelke
+    2100000: BigPipe
+    2100002: pipe
+    2100004: EleBox
+    2100006: Ventilation
+    2100008: Substation_base
+    2100010: Substation_Body
+    2300000: Bdoy
+    2300002: "Chladi\u010De"
+    2300004: EleBox
+    2300006: Podstavec
+    2300008: Trubky
+    2300010: Trubkyvelke
+    3300000: Bdoy
+    3300002: "Chladi\u010De"
+    3300004: EleBox
+    3300006: Podstavec
+    3300008: Trubky
+    3300010: Trubkyvelke
+    4300000: Trubkyvelke
+    4300002: Trubky
+    4300004: EleBox
+    4300006: "Chladi\u010De"
+    4300008: Podstavec
+    4300010: Bdoy
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BigPipe
+    second: {fileID: 2100000, guid: a0db42718d4f52941b7d5bbc3d0c5d18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EleBox
+    second: {fileID: 2100000, guid: fb89f6a75490d3f488ea74b19fca0adc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Substation_Body
+    second: {fileID: 2100000, guid: 860657298e33d2943befa2d066e2f781, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Substation_base
+    second: {fileID: 2100000, guid: 453e0f0741a18d348afb725cefc1a0e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ventilation
+    second: {fileID: 2100000, guid: fc8101f3ee1aea44dbd11dbd29623413, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pipe
+    second: {fileID: 2100000, guid: c694829ec98833e4f9926fd4cdfe3f77, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
