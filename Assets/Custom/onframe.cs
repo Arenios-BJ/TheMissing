@@ -9,7 +9,7 @@ public class onframe : MonoBehaviour {
         deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
     }
 
-    void OnGUI()  //프레임 체크
+    void OnGUI()  // 프레임을 계산하여 GUI로 출력.
     {
         int w = Screen.width, h = Screen.height;
 
