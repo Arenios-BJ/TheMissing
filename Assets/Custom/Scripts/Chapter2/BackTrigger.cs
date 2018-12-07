@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-// 챕터2로 넘어갔을 때, 다시 챕터1로 돌아가지 못하도록 만든 스크립트
+// 플레이어가 정해진 길이 아닌, 다른 길로 갔을 때 막기 위함
+// 사용한 방법 : OnCollisionEnter / Find / SetActive
 
 public class BackTrigger : MonoBehaviour {
     public Transform afterPoint;

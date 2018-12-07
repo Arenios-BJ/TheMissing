@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 
-// 자동차키가 들어있는 금고 스크립트
+// 보스의 집에서 자동차키가 들어있는 금고 스크립트
+// 누를 때마다 빨강-초록-노랑 색깔이 변함
+// 사용한 방법 : Animator / material.color / Find / enabled / RaycastHit
 
 public class ColorChange : MonoBehaviour {
 
@@ -16,7 +18,6 @@ public class ColorChange : MonoBehaviour {
 
     private FirstPersonCamera player;
 
-    // Use this for initialization
     void Start () {
 
         Red.GetComponent<MeshRenderer>().material.color = Color.red;
@@ -33,7 +34,6 @@ public class ColorChange : MonoBehaviour {
         player = FirstPersonCamera.player;
     }
 
-    // Update is called once per frame
     void Update()
     {
 

@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+// 첫 번째 오두막에서 퍼즐 캔버스 -> 닫기를 누르면 캔버스가 꺼진다.
+// 사용한 방법 : Button / Find / Time.timeScale
+
 public class Close_Puz : MonoBehaviour
 {
 

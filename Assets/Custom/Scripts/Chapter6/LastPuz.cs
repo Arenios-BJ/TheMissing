@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 마지막 퍼즐과 관련된 스크립트 -> 밟았을 때 석판의 색깔 변화와 위치이동, 그리고 리셋되었을 때 석판의 변화와 플레이어의 변화를 나타냄
+// 사용한 방법 : bool / FindWithTag / Color32 / SpriteRenderer / transform.position / transform.localPosition / transform.Translate
+
 public class LastPuz : MonoBehaviour {
 
     private SpriteRenderer sprite;
@@ -24,6 +27,7 @@ public class LastPuz : MonoBehaviour {
 	
 	void Update () {
 
+        // 플레이어가 석판을 제대로 밟지 못했다면, 석판이 다시 흰색으로 돌아가고 위치도 돌아간다.
         if (PuzPlayer)
         {
             if (GameObject.FindWithTag("Player").GetComponent<LastPuzManager>().count == 1)
@@ -41,6 +45,7 @@ public class LastPuz : MonoBehaviour {
         }
     }
 
+    // 플레이어가 석판을 밟았다면 색깔이 노란색으로 변하고 위로 올라옴
     void OnCollisionEnter(Collision col)
     {
         if (UpCheck == true)

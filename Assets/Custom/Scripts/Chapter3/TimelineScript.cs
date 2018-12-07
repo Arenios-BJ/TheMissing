@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.Playables;
 
+// 적 베이스에서 보스와 부하들이 대화하는 장면 연출 스크립트
+// 사용한 방법 : PlayableDirector / bool / BoxCollider / Find / SetActive / Destroy
+
 public class TimelineScript : MonoBehaviour {
 
     PlayableDirector playerdirector;

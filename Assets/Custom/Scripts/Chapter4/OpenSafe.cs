@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 
-// 금고 캔버스를 비활성화/활성화
+// 첫 번째 오두막에서 금고 캔버스를 비활성화/활성화
 // 금고 애니메이션 실행
+// 사용한 방법 : SetActive / RaycastHit / Time.timeScale / Input.GetKeyDown
 
 public class OpenSafe : MonoBehaviour
 {

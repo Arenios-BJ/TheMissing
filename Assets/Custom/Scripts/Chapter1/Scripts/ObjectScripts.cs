@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+// 플레이어가 물건들을 클릭했을 때 나오는 대사 관리 스크립트
+// 사용한 방법 : Text / SetActive / Find / RaycastHit / CompareTag / switch / activeSelf
+
 public class ObjectScripts : MonoBehaviour {
 
     public GameObject Story;

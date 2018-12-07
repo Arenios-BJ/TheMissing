@@ -1,5 +1,12 @@
 ﻿using UnityEngine;
 
+// 보스의 집에서 모아야 할 토템과 관련된 스크립트
+// 토템의 기본 상태 -> 제자리에서 빙글빙글 + 아웃라인 (애니메이션 실행중)
+// 플레이어가 토템을 찾았다면 -> 애니메이션 비활성화, 아웃라인 삭제
+// 토템을 찾을 때마다 count가 증가됨
+// count에 따라 이미지가 나타남
+// 사용한 방법 : bool / SetActive / RaycastHit / Destroy / enabled / transform.Translate
+
 public class Totem : MonoBehaviour {
 
     private FirstPersonCamera player;

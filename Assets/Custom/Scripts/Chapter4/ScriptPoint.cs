@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+// BoxCollider 생성 -> 플레이어와 Trigger이벤트가 발생되면 스토리가 나온다.
+// 사용한 방법 : bool / Find / Destroy
+
 public class ScriptPoint : MonoBehaviour {
 
     private bool TriggerCheck;

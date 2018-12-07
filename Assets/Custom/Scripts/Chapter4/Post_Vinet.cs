@@ -2,6 +2,10 @@
 using UnityEngine;
 using UnityEngine.PostProcessing;
 
+// PostProcessing, 비네트와 관련된 스크립트
+// 플레이어가 죽었을 때 효과를 위함
+// 사용한 방법 : Post_Vinet / PostProcessingBehaviour / VignetteModel.Settings / Light / bool / Find / enabled / SetActive / color
+
 public class Post_Vinet : MonoBehaviour {
 
     public static Post_Vinet Vinet;

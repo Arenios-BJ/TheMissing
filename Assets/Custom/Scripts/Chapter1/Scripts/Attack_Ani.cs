@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// 애니메이션 스크립트
+// 첫 번째 오두막에서 도끼 애니메이션 스크립트
+// 사용한 방법 : bool / Animator / Find / SetActive / Destroy / RaycastHit / SetBool / GetCurrentAnimatorStateInfo
 
 public class Attack_Ani : MonoBehaviour
 {
@@ -59,6 +60,7 @@ public class Attack_Ani : MonoBehaviour
     {
         Ani();
 
+        // 도끼를 든 상태로 -> 문을 클릭했을 때 -> 4초가 지난다면 도끼-문과 관련된 모든 것들을 삭제
         if (time >= 4)
         {
             Destroy(arms2);
@@ -75,6 +77,7 @@ public class Attack_Ani : MonoBehaviour
 
             AxeCheck = false;
 
+            // 도끼로 문을 부순 후 대사가 나온다.
             if (storycheck == true)
             {
                 GameObject.Find("Ch1_Story").GetComponent<Ch1_Script>().Ch1Script.SetActive(true);
@@ -89,7 +92,7 @@ public class Attack_Ani : MonoBehaviour
     {
             if (AxeCheck == true) // 도끼를 사용했음
             {
-                arms2.SetActive(true);
+                arms2.SetActive(true); // 도끼를 들고 있는 팔 등장!
 
             if (PlayerN.near == true)
             {
@@ -105,6 +108,8 @@ public class Attack_Ani : MonoBehaviour
                                 AxeAni.SetBool("AxeAttack", true);
                                 player2.ChangeMoveRotaState(false);
 
+                                // 도끼에 붙어있던 콜라이더 삭제
+                                // 이유 : 콜라이더가 붙어있으면 문에 달려있는 콜라이더와 충돌이 일어나서 플레이어가 팅기기 때문
                                 Destroy(GameObject.Find("Item_Axe (1)").GetComponent<CapsuleCollider>());
                             }
                         }
@@ -112,6 +117,7 @@ public class Attack_Ani : MonoBehaviour
                 }
             }
 
+            // 도끼를 휘두르는 애니메이션이 작동중이라면
             if (AxeAni.GetCurrentAnimatorStateInfo(0).IsName("AxeAttack"))
             {
                 Debug.Log("공격중");

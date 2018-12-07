@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+// 도움말 스크립트 (첫 번째 오두막에서만 뜬다)
+// 사용한 방법 : Text / SetActive / RaycastHit / CompareTag / activeSelf / GetKeyUp
+
 public class Help : MonoBehaviour {
 
     public GameObject HelpCanvas;
@@ -34,6 +37,7 @@ public class Help : MonoBehaviour {
             {
                 if (Input.GetMouseButtonDown(0))
                 {
+                    // 아이템을 먹었으면 I를 눌러 확인이라는 도움말이 뜬다.
                     if (hit.transform.CompareTag("Item"))
                     {
                         HelpText.text = "I 를 눌러 확인";
@@ -59,7 +63,7 @@ public class Help : MonoBehaviour {
             HelpCanvas.SetActive(true);
         }
         
-
+        // 인벤토리가 켜져있는 상태라면
         if (inven.GetComponent<Inventory>().IsOpened == true)
         {
             if (GameManager.gm.panelOpen == false)

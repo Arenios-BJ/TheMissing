@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-// 퍼즐 Drag 스크립트
+// 첫 번째 오두막 퍼즐 Drag 스크립트
+// 사용한 방법 : Find / OnBeginDrag / OnDrag / OnEndDrag / SetParent
 
 // Drag 기능을 쓰려면 IDragHandler, IBeginDragHandler, IEndDragHandler 상속 받아야 한다.
 public class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler

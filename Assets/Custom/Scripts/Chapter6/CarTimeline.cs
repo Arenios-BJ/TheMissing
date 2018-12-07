@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.Playables;
 
+// 마지막 연출 스크립트 -> 플레이어가 차를 누르면 연출이 시작된다.
+// 사용한 방법 : PlayableDirector / Find / SetActive / RaycastHit / Destroy / Time.deltaTime
 
 public class CarTimeline : MonoBehaviour {
 
@@ -39,10 +41,12 @@ public class CarTimeline : MonoBehaviour {
                 {
                     if (inven.CarKey == true)
                     {
+                        // 차를 선택했다면
                         if (hit.transform.name == "Classic_16_Door_L")   //
                         {
                             Destroy(FakeCar);
                             car.SetActive(true);
+                            // 인벤토리 아이템 리스트에서 자동차 키를 삭제
                             inven.items.Remove(GameObject.Find("Item_CarKey"));
                             Destroy(GameObject.Find("Item_CarKey"));
                             GameObject.Find("Ch6_Story").GetComponent<Ch6_Script>().Ch6Script.SetActive(true);
@@ -56,6 +60,7 @@ public class CarTimeline : MonoBehaviour {
             }
         }
 
+        // 타임라인이 끝나면 엔딩 화면과 함께 배경음은 사라진다
         if(playerdirector.time > 18)
         {
             End.SetActive(true);

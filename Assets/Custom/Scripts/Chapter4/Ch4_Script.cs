@@ -2,6 +2,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// 보스의 집과 관련된 대사(스토리)를 위한 코드
+// 사용한 방법 : Text / string[] / List<string> / TextAsset / SetActive / Split / foreach / activeSelf / StartsWith
+
 public class Ch4_Script : MonoBehaviour {
 
     public GameObject Ch4Script;

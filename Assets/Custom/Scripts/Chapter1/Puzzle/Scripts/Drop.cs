@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
+// 첫 번째 오두막 퍼즐 Drop 스크립트
+// 사용한 방법 : OnDrop / childCount / SetParent
+
 public class Drop : MonoBehaviour, IDropHandler
 {
     // 드롭 이벤트

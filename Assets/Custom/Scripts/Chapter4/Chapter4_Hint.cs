@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 
+// 보스의 집에서 힌트와 관련된 오브젝트를 선택했을 때 UI로 뜨게하기 위함
+// 사용한 방법 : SetActive / RaycastHit / switch / Time.timeScale / Input.GetKeyDown
+
 public class Chapter4_Hint : MonoBehaviour
 {
-
     private FirstPersonCamera player;
 
     public GameObject hint1;
@@ -23,7 +25,6 @@ public class Chapter4_Hint : MonoBehaviour
 
     void Start()
     {
-
         player = FirstPersonCamera.player;
         hint1.SetActive(false);
         hint2.SetActive(false);

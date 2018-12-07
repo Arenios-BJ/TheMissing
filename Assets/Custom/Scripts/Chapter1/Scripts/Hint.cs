@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
+// 첫 번째 오두막에서 바닥에 있는 힌트를 눌렀을 때, 힌트가 UI로 뜨게하는 스크립트
+// 사용한 방법 : SetActive / IsPointerOverGameObject / RaycastHit / Time.timeScale 
+
 public class Hint : MonoBehaviour
 {
     private FirstPersonCamera player;

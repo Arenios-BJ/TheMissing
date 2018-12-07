@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-// 플레이어가 서랍 같은 것을 선택했을 때, 열리는 애니메이션을 관리하는 스크립트
+// 보스의 집에서 플레이어가 서랍 같은 것을 선택했을 때, 열리는 애니메이션을 관리하는 스크립트
+// 사용한 방법 : Animator / bool / Find / enabled / RaycastHit / SetBool
 
 public class OpenAnimation : MonoBehaviour {
 

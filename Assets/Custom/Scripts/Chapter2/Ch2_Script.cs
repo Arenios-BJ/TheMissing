@@ -2,6 +2,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// 두 번째 오두막의 스토리를 위한 스크립트
+// 사용한 방법 : Text / string[] / List<string> / TextAsset / SetActive / Split / foreach / activeSelf / StartsWith
+
 public class Ch2_Script : MonoBehaviour {
 
     public GameObject Ch2Script;

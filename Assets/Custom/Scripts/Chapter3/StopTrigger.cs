@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+// 플레이어가 다른 곳으로 이동하지 못하게 막음
+// 사용한 방법 : OnCollisionEnter / Find / SetActive
+
 public class StopTrigger : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)

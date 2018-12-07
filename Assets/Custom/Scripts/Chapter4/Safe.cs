@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-// 금고 비밀번호 스크립트
+// 첫 번째 오두막에서, 열쇠의 비밀번호를 제대로 입력했는지 체크함
+// 사용한 방법 : Animator / enabled / Find / enabled / Button / Instantiate / DetachChildren / childCount / GetChild / SetParent / Time.timeScale
 
 public class Safe : MonoBehaviour
 {

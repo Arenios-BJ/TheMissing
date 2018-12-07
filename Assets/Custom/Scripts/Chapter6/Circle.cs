@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+// 석판과 관련된 스크립트 -> 플레이어가 4가지의 유물을 먹고, 4가지의 유물을 끼울 때 스크립트
+// 사용한 방법 : bool / Animator / Find / SetActive / enabled / RaycastHit / AnimatorStateInfo / Destroy
+
 public class Circle : MonoBehaviour {
 
     public GameObject circle1;
@@ -65,6 +68,7 @@ public class Circle : MonoBehaviour {
 
     void Update()
     {
+        // 모든 석판(유물)을 먹었다면
         if (cir.Circle1 == true && cir.Circle2 == true && cir.Circle3 == true && cir.Circle4 == true)
         {
             CirCheck = true;
@@ -77,14 +81,17 @@ public class Circle : MonoBehaviour {
             {
                 if (GameManager.gm.panelOpen == false)
                 {
-                    if (hit.transform.name == "Circle_mold")
+                    // 모든 유물을 가지고 있고, 유물을 끼우는 석판을 눌렀다면
+                    if (hit.transform.name == "Circle_mold") 
                     {
                         if (CirCheck == true)
                         {
                             SoundManager.instance.SelectSound(hit.transform.name);
 
+                            // CircleCount증가
                             CircleCount++;
 
+                            // 첫 번째 유물이 끼워지고, 아이템 리스트에서 삭제
                             if (CircleCount == 1)
                             {
                                 if (cir.Circle1 == true)
@@ -95,6 +102,7 @@ public class Circle : MonoBehaviour {
                                 }
                             }
 
+                            // 두 번째 유물이 끼워지고, 아이템 리스트에서 삭제
                             if (CircleCount == 2)
                             {
                                 if (cir.Circle2 == true)
@@ -105,6 +113,7 @@ public class Circle : MonoBehaviour {
                                 }
                             }
 
+                            // 세 번째 유물이 끼워지고, 아이템 리스트에서 삭제
                             if (CircleCount == 3)
                             {
                                 if (cir.Circle3 == true)
@@ -115,10 +124,12 @@ public class Circle : MonoBehaviour {
                                 }
                             }
 
+                            // 그리고 마지막 네 번째 석판까지 끼웠다면
                             if (CircleCount == 4)
                             {
                                 if (cir.Circle4 == true)
                                 {
+                                    // 각종 애니메이션과 연출 실행
                                     transform.parent.parent.tag = "Untagged";
                                     circle4.SetActive(true);
                                     CirCheck = false;
@@ -140,6 +151,7 @@ public class Circle : MonoBehaviour {
             }
         }
 
+        // 문이 열리는 연출이 끝났다면, 해당되는 카메라를 삭제(필요없으니까)
         if(FenceCameraCheck == true)
         {
             AnimatorStateInfo stateinfo;

@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+// 보스의 집에 들어오기전 플레이어와 창문과 상호작용
+// 사용한 방법 : Animator / bool / enabled / RaycastHit / enabled
+
 public class Window : MonoBehaviour {
 
     private Animator Window_Left;

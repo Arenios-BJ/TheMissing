@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+// 원주민들과 관련된 애니메이션 스크립트 -> enabled(false)상태로 있다가 플레이어가 차를 타는 순간 true상태로 바뀐다.
+// 사용한 방법 : Animator / Find / enabled
+
 public class DeadAniManager : MonoBehaviour {
 
     private Animator DeadShaman;

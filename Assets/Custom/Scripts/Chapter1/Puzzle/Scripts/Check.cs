@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+// 첫 번째 오두막에서 퍼즐을 정확한 위치에 놓았는지 확인하는 코드
+// 사용한 방법 : bool / Find / childCount / GetChild / Destroy / Time.timeScale
+
 public class Check : MonoBehaviour
 {
     private GameObject OnePanel;
@@ -46,10 +49,13 @@ public class Check : MonoBehaviour
 
     void C_Check()
     {
+        // childCount == 0 이라는 뜻은 플레이어가 퍼즐판에서 퍼즐을 제외시켰다는 뜻
         if (OnePanel.transform.childCount == 0)
         {
             check = false;
         }
+        // OnePanel의 childCount가 1이고, 그 child의 이름이 "One" 이라면
+        // 정답 입니다!
         else if (OnePanel.transform.childCount == 1)
         {
             if (OnePanel.transform.GetChild(0).name == "One")
@@ -171,6 +177,7 @@ public class Check : MonoBehaviour
     {
         C_Check();
 
+        // 모든 퍼즐을 정확한 위치에 놓았다면
         if (check == true && check2 == true && check3 == true && check4 == true && check5 == true && check6 == true && check7 == true && check8 == true && check9 == true && check10 == true)
         {
             Destroy(canvas);

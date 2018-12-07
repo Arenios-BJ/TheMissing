@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// 마지막 퍼즐과 관련된 스크립트 -> 밟아야 할 석판을 제대로 밟았는가를 체크함
+// 사용한 방법 : bool / Find / SetActive / enabled / OnCollisionEnter / transform.position
+
 public class LastPuzManager : MonoBehaviour {
 
     public GameObject OkPanel;

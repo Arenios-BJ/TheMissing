@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+// 두 번째 오두막에서 박사의 책과 관련된 스크립트
+// 사용한 방법 : bool / SetActive / RaycastHit / Time.timeScale / Input.GetKeyDown
+
 public class DoctorBook : MonoBehaviour {
 
     private FirstPersonCamera player;
